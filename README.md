@@ -8,3 +8,6 @@ A user can register with the application
 
 ```
 
+`
+Follow this link to view the gh-pages https://mariamiah.github.io/Event-Life/
+`
