@@ -31,12 +31,12 @@ def registration_checker(singlename):
     ''' Function that checks if the user exists either in ordinary_list
     or in vip_list'''
     if singlename in ordinary_list:
-        print(registration_checker_ordinary(singlename))
+        return registration_checker_ordinary(singlename)
     elif singlename in vip_list:
-        print(registration_checker_vip(singlename))
+        return registration_checker_vip(singlename)
     else:
-        print("User not registered")
-
+        return "User not registered"
+        
 print(registration_checker(singlename))
 
 ordinary.close()
