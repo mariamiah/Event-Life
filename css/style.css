@@ -83,6 +83,15 @@ form{
     margin-bottom: 5px;
     color: black;
 }
+/* Add style to the password boxes */
+.register input[type=password]{
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: black;
+}
 /*Add style to the submit button*/
 input[type=submit]{
     height: 50%;
@@ -101,15 +110,13 @@ label{
 }
 
 /*Add responsiveness for a mobile phone device*/
-@media only screen and (min-width: 320px) and (max-width: 480px){ 
-    .topnav ul {
+@media only screen and (min-width: 280px) and (max-width: 480px){ 
+.topnav ul {
        margin-left:-10%;
     }
 
-    .topnav ul li {
-        display: block;
-        
-        
+.topnav ul li {
+        display: block;  
     }
 
 .register{
@@ -212,7 +219,7 @@ body {
 /*Add responsiveness for medium devices like desktops*/
 
 @media only screen and (min-width: 992px) and (max-width: 1025px){ 
-    .topnav ul {
+.topnav ul {
         margin-left: 10%;
         margin-top: 5px;
     }
@@ -260,8 +267,7 @@ body {
         padding: 5px 10px;
     }
 
-.register{
-      
+.register{  
     width:60%;
     height: auto;
     border: solid thin lightgreen;
