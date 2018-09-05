@@ -1,0 +1,7 @@
+[
+  "test_user.py::TestUser::test_create_user",
+  "test_user.py::TestUser::test_user_instance",
+  "test_user.py::TestUser::test_validate_email",
+  "test_user.py::TestUser::test_validate_firstname",
+  "test_user.py::TestUser::test_validate_lastname"
+]
