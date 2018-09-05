@@ -1,0 +1,291 @@
+/* Add style to the body*/
+body{
+    height: 100vh;
+    margin: 0;
+    background-color:lightgrey;
+}
+/* Add style to the nav-bar*/
+.topnav{
+    background-color: black;
+    color: white;
+    padding:5px;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    overflow:hidden;
+    text-align: center;
+}
+/* Style the menu list items in the nav-bar*/
+.topnav-list ul{
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.topnav-list li {
+    font-size:18px;
+    height: 10px;
+    display: inline-block;
+    padding: 15px 15px;
+  }
+.topnav-list a {
+    color:white;
+    text-decoration: none;
+}
+/*Style the main section of body*/
+.main{
+    display: flex;
+    height: 74%;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+/*Add style to the register form*/
+.register{
+    margin-left: 1%;
+    border: solid thin lightgreen;
+    margin-top: 1px;
+    background-color:white;
+    width  : 640px;
+    height : 650px;
+    margin : 0 auto;
+}
+/*Style the book ticket button*/
+#bookticket{
+    height: 50%;
+    width: 50%;
+    padding: 10px 15px;
+    margin-left: 28%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    background-color: green;
+    color: white;
+}
+/* Style the registration form*/
+form{
+    margin-top: 15px;
+    position: relative;
+
+}
+/*Style the form title*/
+#eventlife{
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+     color:green;
+}
+
+/* Add style to the email and text boxes*/
+.register input[type=text],input[type=email]{
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: black;
+}
+/*Add style to the submit button*/
+input[type=submit]{
+    height: 50%;
+    width: 30%;
+    padding: 10px 15px;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    background-color: green;
+    color: white;
+}
+/*Style the form labels*/
+label{
+    padding: 10% 10%;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+/*Add responsiveness for a mobile phone device*/
+@media only screen and (min-width: 320px) and (max-width: 480px){ 
+    .topnav ul {
+       margin-left:-10%;
+    }
+
+    .topnav ul li {
+        display: block;
+        
+        
+    }
+
+.register{
+        width: 80%;
+        height: auto;
+        border: solid thin lightgreen;
+        margin-top: 5px;
+        background-color: white;
+        margin-left: 10%;
+    }
+.main{
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+img{
+    height:auto;
+    max-width:100%;
+}
+body {
+    background-color: rgb(12, 44, 12);
+}
+ }
+/* Add responsiveness for smaller tablet devices*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .topnav ul {
+            margin-left: 10%;
+            margin-top: 5px;
+        }
+    
+    .topnav ul li {
+            display: inline-block;
+            padding: 5px 10px;
+            color: darkgreen;
+        }
+        
+    .register{
+            width: 80%;
+            height: auto;
+            border: solid thin lightgreen;
+            margin-top: 5px;
+            background-color: white;
+            margin-left: 10%;
+        }
+    .main{
+            display: flow-root;
+            height: 100%;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+    img{
+        height:auto;
+        max-width:100%;
+    }
+    body {
+        background-color: pink;
+    }
+    
+    }
+/*Add responsiveness for a tablet device*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .topnav ul {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        padding: 5px 10px;
+         }
+
+
+.register{
+        width: 60%;
+        height: auto;
+        border: solid thin lightgreen;
+        margin-top: 5px;
+        background-color: white;
+        margin-left: 10%;
+    }
+.main{
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+img{
+    height:auto;
+    max-width:100%;
+}
+body {
+    background-color: lightseagreen;
+}
+
+}
+/*Add responsiveness for medium devices like desktops*/
+
+@media only screen and (min-width: 992px) and (max-width: 1025px){ 
+    .topnav ul {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+.topnav ul li {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+.register{
+      
+    width:60%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-top: 5px;
+    background-color: white;
+    margin-left: 10%; 
+      
+    }
+.main{
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    
+    }
+
+img{
+    height:auto;
+    max-width:100%;
+}
+body {
+    background-color: lightblue;
+}
+
+}
+@media only screen and (min-width: 1026px) and (max-width: 1084px){ 
+    .topnav ul {
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+.topnav ul li {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+.register{
+      
+    width:60%;
+    height: auto;
+    border: solid thin lightgreen;
+    margin-top: 5px;
+    background-color: white;
+    margin-left: 10%; 
+      
+    }
+.main{
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    
+    }
+
+img{
+    height:auto;
+    max-width:100%;
+}
+body {
+    background-color: rgb(97, 97, 15);
+}
+
+}
+
+
