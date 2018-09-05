@@ -30,6 +30,3 @@ class TestUser(unittest.TestCase):
     def test_valid_lastname(self):
         self.assertEqual(self.user.lastname, 'mimi')
         self.assertIsInstance(self.user.email, str)
-    
-
-    
