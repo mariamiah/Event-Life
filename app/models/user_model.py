@@ -11,13 +11,15 @@ class User:
 
     def create_user(self):
         if self.email not in users:
-            user = {'email': self.email,
+            user = {
+                
+                    'email': self.email,
                     'firstname': self.firstname,
                     'lastname': self.lastname,
                     'password': self.password
                     }
             users.append(user)
-            return users 
+            return users
 
     def validate_email(self):
         for letter in self.email:
