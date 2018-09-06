@@ -24,7 +24,6 @@ def delete_user(lastname):
     return jsonify({'message': users})
 
 
-
 @guest.route('/api/get-users')
 def get_users():
     Users = [user.create_user() for user in users]
