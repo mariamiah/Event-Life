@@ -1,6 +1,9 @@
 from flask import Flask
-from app.user.user_views import user
+from app.user.user_views import guest
+
 
 app = Flask(__name__)
 
-app.register_blueprint(user)
+app.register_blueprint(guest)
+
+
