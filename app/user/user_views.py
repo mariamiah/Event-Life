@@ -1,12 +1,13 @@
 from flask import Blueprint, request, jsonify, json
 from app.models.user_model import User
 
-user = Blueprint('user', __name__)
+
+guest = Blueprint('guest', __name__)
 
 users = []
 
 
-@user.route('/api/add-user', methods=['POST', 'GET'])
+@guest.route('/api/add-user', methods=['POST', 'GET'])
 def add_user():
     if request.method == 'POST':
         data = request.get_json()
@@ -15,13 +16,16 @@ def add_user():
     return jsonify(user.create_user()), 201
 
 
-@user.route('/api/delete-users', methods=['DELETE'])
-def delete_user():
-    del users
-    return jsonify({'message': "Successfully deleted"}), 200
+@guest.route('/api/delete-users/<lastname>', methods=['DELETE'])
+def delete_user(lastname):
+    for user in users:
+        if user['lastname'] == lastname:
+            users.remove(user)
+    return jsonify({'message': users})
 
 
-@user.route('/api/get-users')
+
+@guest.route('/api/get-users')
 def get_users():
     Users = [user.create_user() for user in users]
     return jsonify({'message': Users})
