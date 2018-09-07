@@ -21,7 +21,7 @@ def delete_user(lastname):
     for user in users:
         if user['lastname'] == lastname:
             users.remove(user)
-    return jsonify("message":users)
+    return jsonify({"message":users})
 
 
 @guest.route('/api/get-users')
