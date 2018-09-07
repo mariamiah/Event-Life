@@ -14,18 +14,33 @@ class Person:
 
 
 class User(Person):
-    def __init__(self, email, firstname, lastname, password):
-        self.email = email
-        self.firstname = firstname
-        self.lastname = lastname
-        self.password = password
+    def __init__(self, name, age, color, event_category):
+        super().__init__(name, age, color)
+        self.event_category = event_category
     
-    def get_email(self):
-        return self.email
-    
-    def get_name(self):
-        return self.firstname + self.lastname
+    def description(self):
+        return "{} belongs to {} category".format(super().get_name(), self.event_category)
 
 
-class GuestList(self):
-    pass
+class GuestList:
+    def __init__(self):
+        self.registered_users = dict()
+    
+    def user_exists(self, name):
+        return self.registered_users.__contains__(name)
+    
+    def add_users(self, user):
+        if (self.user_exists(user.name)):
+            return "User already exists"
+        self.registered_users[user.name] = user
+
+    def find_user_by_name(self, name):
+        if (self.user_exists(name)):
+            return self.registered_users[name]
+        return "User doesnot exist"
+
+    def delete_user(self, name):
+        if (self.user_exists(name)):
+            del self.registered_users[name]
+        else:
+            return "User does not exist"
