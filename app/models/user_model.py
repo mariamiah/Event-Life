@@ -38,4 +38,4 @@ class User:
     
     def validate_password(self):
         if len(self.password) < 5:
-            return "Password is too short"       
+            return "Password is too short" 
