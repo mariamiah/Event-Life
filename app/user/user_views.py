@@ -7,7 +7,7 @@ guest = Blueprint('guest', __name__)
 users = []
 
 
-@guest.route('/api/add-user', methods=['POST', 'GET'])
+@guest.route('/api/add-user', methods=['POST'])
 def add_user():
     if request.method == 'POST':
         data = request.get_json()
@@ -21,7 +21,7 @@ def delete_user(lastname):
     for user in users:
         if user['lastname'] == lastname:
             users.remove(user)
-    return jsonify({'message': users})
+    return jsonify("message":users)
 
 
 @guest.route('/api/get-users')
