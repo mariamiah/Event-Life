@@ -15,15 +15,15 @@ def registration_checker(singlename):
     ''' Function that checks if the user exists either in ordinary_list
     or in vip_list'''
     for name in ordinary_list:
-        if name.split()[0] == singlename:
+        if name.split()[0].lower() == singlename.lower():
             return [name, "ORDINARY"]
 
     for name in vip_list:
-        if name.split()[0] == singlename:
+        if name.split()[0].lower() == singlename.lower():
             return [name, "VIP"]
     
     for name in ordinary_list and vip_list:
-        if singlename not in name.split()[0]:
+        if singlename.lower() not in name.split()[0].lower():
             return "User does not exist"
 print(registration_checker(singlename))
 
