@@ -1,0 +1,8 @@
+[
+  "test_user.py::TestUser::test_add_user",
+  "test_user.py::TestUser::test_user_class",
+  "test_user.py::TestUser::test_valid_firstname",
+  "test_user.py::TestUser::test_valid_lastname",
+  "test_user.py::TestUser::test_validate_email",
+  "test_user.py::TestUser::test_validate_password"
+]
